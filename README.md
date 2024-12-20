@@ -19,15 +19,6 @@ This project explores and analyzes a comprehensive **App Store dataset** sourced
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
-
-### Missing Values in Key Fields
-The dataset was checked for missing values in essential fields, such as `track_name`, `user_rating`, and `prime_genre`. Additionally, app descriptions were analyzed for missing values.
-
-- **Result**: No missing values were found in the `AppleStore` table or in the `app_desc` field of the `appleStore_description_combined` table.
-
----
-
 ## Objectives
 
 1. Perform exploratory data analysis (EDA) to understand the dataset structure and identify key insights.
@@ -39,6 +30,8 @@ The dataset was checked for missing values in essential fields, such as `track_n
 3. Provide actionable recommendations for app developers based on findings.
 
 ---
+
+## 🔍 Exploratory Data Analysis (EDA)
 
 ## SQL Queries and Insights
 
