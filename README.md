@@ -69,10 +69,11 @@ This project explores and analyzes a comprehensive **App Store dataset** sourced
       MAX(user_rating) AS Maximum_Rating,
       AVG(user_rating) AS Average_Rating
       FROM AppleStore;
-- Result: 
-      *Minimum Rating: 0.0
-      *Maximum Rating: 5.0
-      *Average Rating: ~3.5
+- Result:
+
+      Minimum Rating: 0.0
+      Maximum Rating: 5.0
+      Average Rating: ~3.5
   ---
 
 - **Paid vs Free Apps Ratings**:
