@@ -50,6 +50,7 @@ This project explores and analyzes a comprehensive **App Store dataset** sourced
   FROM AppleStore 
   WHERE track_name IS NULL OR user_rating IS NULL OR prime_genre IS NULL;
 - Result: No missing values in key fields.
+---
 
 - **Number of Apps Per Genre**:
   ```sql
@@ -58,7 +59,6 @@ This project explores and analyzes a comprehensive **App Store dataset** sourced
     GROUP BY prime_genre
     ORDER BY NoOfApps DESC;
 - Insight: The Games genre dominates the App Store in terms of the number of apps.
-  
 ---
 
 ### 2. **Analysis of Ratings**
@@ -73,6 +73,7 @@ This project explores and analyzes a comprehensive **App Store dataset** sourced
       *Minimum Rating: 0.0
       *Maximum Rating: 5.0
       *Average Rating: ~3.5
+  ---
 
 - **Paid vs Free Apps Ratings**:
    ```sql
@@ -100,7 +101,7 @@ This project explores and analyzes a comprehensive **App Store dataset** sourced
   GROUP BY Language_Bucket
   ORDER BY Avg_Rating DESC;
 - Insight: Apps supporting 10–30 languages have the highest average ratings.
-
+---
 - **Genres with Low Ratings**:
    ```sql
       SELECT prime_genre, AVG(user_rating) AS Average_Rating
@@ -109,7 +110,7 @@ This project explores and analyzes a comprehensive **App Store dataset** sourced
       ORDER BY Average_Rating ASC
       LIMIT 10;
 - Insight: Finance and Book apps have the lowest average ratings, presenting opportunities for improvement.
-
+---
 - **Top Rated Apps Per Genre**:
    ```sql
    WITH RankedApps AS
@@ -120,7 +121,7 @@ This project explores and analyzes a comprehensive **App Store dataset** sourced
     FROM RankedApps
     WHERE Rank = 1;
  - Result: Identified the highest-rated app for each genre.
-
+---
 - **Correlation Between Description Length and Ratings:**:
    ```sql
   SELECT CASE
