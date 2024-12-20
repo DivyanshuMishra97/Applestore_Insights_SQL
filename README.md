@@ -1,0 +1,1 @@
+# Applestore_Insights_SQL
